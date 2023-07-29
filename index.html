@@ -3,10 +3,33 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            integrity="sha384-...your-integrity-hash-goes-here..."
+            crossorigin="anonymous"
+        />
         <link rel="stylesheet" href="./styles/style.css" />
         <title>Todo list</title>
     </head>
     <body>
+        <header class="header">
+            <div class="title" id="title">Forget-Me-Not-E</div>
+        </header>
+        <main>
+            <section class="task-add">
+                <input
+                    type="text"
+                    class="todo-task"
+                    id="todo-task-add"
+                    placeholder="add new task"
+                />
+                <button class="task" id="add-task">
+                    <i class="fas fa-puzzle-piece"></i>
+                </button>
+            </section>
+        </main>
+        <footer></footer>
         <script type="module" src="./src/init.js"></script>
     </body>
 </html>
