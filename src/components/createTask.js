@@ -17,7 +17,10 @@ const createTask = (taskText) => {
 
   //create li
   const liEl = document.createElement('li');
-  liEl.innerText = taskText;
+  const inputEl = document.createElement('input');
+  inputEl.id = 'userTaskInput';
+  inputEl.value = taskText;
+  liEl.appendChild(inputEl);
 
   // create button edit task
   const buttonEditTask = document.createElement('button');
