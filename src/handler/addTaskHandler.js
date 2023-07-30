@@ -4,7 +4,6 @@ import dom from '../dom.js';
 const addTaskHandler = (e) => {
   const taskText = dom.taskInput.value;
   if (taskText) {
-    console.log(taskText);
     createTask(taskText);
   }
 };

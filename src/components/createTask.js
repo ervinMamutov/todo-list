@@ -34,8 +34,6 @@ const createTask = (taskText) => {
   buttonRemoveTask.innerHTML = buttonIcon[1].iconHTML;
   buttonRemoveTask.id = buttonIcon[1].id;
 
-  console.log(buttonIcon);
-
   liEl.append(buttonEditTask, buttonRemoveTask);
   ulEl.appendChild(liEl);
 

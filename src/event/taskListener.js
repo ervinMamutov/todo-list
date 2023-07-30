@@ -1,6 +1,4 @@
 const taskListener = (handler) => {
-  console.log(handler);
-
   document.addEventListener('DOMContentLoaded', () => {
     const taskContainer = document.querySelector('.task-container');
     if (taskContainer) {
