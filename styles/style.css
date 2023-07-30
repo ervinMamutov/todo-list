@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Enriqueta:regular,500,600,700);
+
 *,
 *::before,
 *::after {
@@ -6,7 +8,96 @@
     padding: 0;
 }
 
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+html,
 body {
-    background-color: #5a5353;
-    color: whitesmoke;
+    height: 100%;
+    background-color: #000;
+    color: hwb(0 3% 97%);
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-family: Enriqueta, sans-serif;
+    font-weight: 600;
+    color: #696b9e;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+.task-add {
+    text-align: center;
+    padding: 10px 10px;
+}
+
+#list {
+    text-align: center;
+    padding: 10px 10px;
+}
+
+#userTaskInput {
+    margin: 5px;
+    margin-left: -5px;
+}
+
+input {
+    background-color: #35364f;
+    color: #cfcfdf;
+    border-radius: 5px 5px;
+}
+/* 
+button {
+    background-color: #1b1b28;
+    border-radius: 50%;
+}
+
+*/
+button {
+    /* Previous styles for the button */
+    background-color: #1b1b28;
+    border-radius: 50%;
+    padding: 5px 5px;
+    border: 1px solid #ccc;
+}
+
+.button i {
+    /* Previous styles for the icon */
+    color: #adaec9;
+    font-size: 5px; /* Adjust the font size for the icon */
+    margin-right: 2px;
+}
+
+i {
+    color: #adaec9;
+    font-weight: 400;
+}
+
+.reset-all {
+    text-align: center;
+}
+
+#btn-reset-all {
+    background-color: #1b1b28;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px 80px;
+    border: 1px solid #1b1b28;
+    margin-right: 60px;
 }
