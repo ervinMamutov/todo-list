@@ -1,11 +1,15 @@
 const deleteTaskHandler = (e) => {
-  const taskItem = e.target;
-  const li = taskItem.closest('li');
+  const taskEl = e.target;
+  const parent = taskEl.parentElement;
+  const btnElClassName = parent.classList;
 
-  if (li) {
-    // remove task item from the DOM
+  const li = taskEl.closest('li');
 
-    li.remove();
+  if (btnElClassName.contains('delete-btn-task')) {
+    if (li) {
+      // remove task item from the DOM
+      li.remove();
+    }
   }
 };
 

@@ -1,7 +1,7 @@
 import createTask from '../components/createTask.js';
 import dom from '../dom.js';
 
-const addTaskHandler = () => {
+const addTaskHandler = (e) => {
   const taskText = dom.taskInput.value;
   console.log(taskText);
   createTask(taskText);
