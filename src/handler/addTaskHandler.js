@@ -3,8 +3,10 @@ import dom from '../dom.js';
 
 const addTaskHandler = (e) => {
   const taskText = dom.taskInput.value;
-  console.log(taskText);
-  createTask(taskText);
+  if (taskText) {
+    console.log(taskText);
+    createTask(taskText);
+  }
 };
 
 export default addTaskHandler;
