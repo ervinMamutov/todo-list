@@ -4,12 +4,14 @@ const resetAllHandler = (e) => {
   // const parent = taskEl.parentEl;
   // console.log(taskEl);
 
-  const taskContainer = document.querySelector('.task-container');
-  // const ulEl = document.querySelector('#list');
+  // let taskContainer = document.querySelector('.task-container');
+
+  const ulEl = document.querySelector('#list');
+  ulEl.innerHTML = '';
 
   // console.log(taskContainer);
 
-  taskContainer.remove();
+  // taskContainer.remove();
 };
 
 export default resetAllHandler;
