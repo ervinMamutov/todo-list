@@ -1,19 +1,9 @@
 import data from '../data.js';
 import dom from '../dom.js';
 
-// create section
-const sectionEl = document.createElement('section');
-sectionEl.classList.add('task-container');
-const main = dom.main;
-main.append(sectionEl);
-
-//create ul
-const ulEl = document.createElement('ul');
-ulEl.id = 'list';
-sectionEl.appendChild(ulEl);
-
 const createTask = (taskText) => {
   const buttonIcon = data.icon;
+  const ulEl = dom.ulList;
 
   //create li
   const liEl = document.createElement('li');
@@ -35,7 +25,7 @@ const createTask = (taskText) => {
   buttonRemoveTask.id = buttonIcon[1].id;
 
   liEl.append(buttonEditTask, buttonRemoveTask);
-  ulEl.appendChild(liEl);
+  ulEl.append(liEl);
 
   return liEl;
 };

@@ -4,6 +4,8 @@ const dom = {
   taskButton: document.getElementById('add-task'),
   deleteStartTaskButton: document.getElementById('delete-task'),
   resetAllButton: document.getElementById('btn-reset-all'),
+  taskContainer: document.querySelector('.task-container'),
+  ulList: document.querySelector('.list'),
 };
 
 export default dom;

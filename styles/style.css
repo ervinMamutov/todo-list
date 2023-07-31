@@ -36,6 +36,7 @@ h1 {
     font-family: Enriqueta, sans-serif;
     font-weight: 600;
     color: #696b9e;
+    margin-left: -47px;
 }
 
 .main {
@@ -47,7 +48,7 @@ h1 {
     padding: 10px 10px;
 }
 
-#list {
+.list {
     text-align: center;
     padding: 10px 10px;
 }
