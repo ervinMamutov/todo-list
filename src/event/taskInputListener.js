@@ -1,6 +1,10 @@
 import dom from '../dom.js';
 import addTaskHandler from '../handler/addTaskHandler.js';
 
-dom.taskButton.addEventListener('click', (e) => {
-  addTaskHandler(e);
-});
+const taskInputListener = () => {
+  dom.taskButton.addEventListener('click', (e) => {
+    addTaskHandler(e);
+  });
+};
+
+export default taskInputListener;

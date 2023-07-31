@@ -1,16 +1,8 @@
 const deleteTaskHandler = (e) => {
-  const taskEl = e.target;
-  const parent = taskEl.parentElement;
-  const btnElClassName = parent.classList;
-
-  const li = taskEl.closest('li');
-
-  if (btnElClassName.contains('delete-btn-task')) {
-    if (li) {
-      // remove task item from the DOM
-      li.remove();
-    }
-  }
+  const targetEl = e.target;
+  const buttonEl = targetEl.parentElement;
+  const inputEl = buttonEl.parentElement;
+  inputEl.remove();
 };
 
 export default deleteTaskHandler;

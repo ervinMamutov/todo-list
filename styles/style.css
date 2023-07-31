@@ -35,7 +35,8 @@ body {
 h1 {
     font-family: Enriqueta, sans-serif;
     font-weight: 600;
-    color: #696b9e;
+    color: #48ce0e;
+    margin-left: -47px;
 }
 
 .main {
@@ -47,7 +48,7 @@ h1 {
     padding: 10px 10px;
 }
 
-#list {
+.list {
     text-align: center;
     padding: 10px 10px;
 }
@@ -62,25 +63,34 @@ input {
     color: #cfcfdf;
     border-radius: 5px 5px;
 }
-/* 
-button {
-    background-color: #1b1b28;
-    border-radius: 50%;
+
+input:hover {
+    cursor: text;
+    background-color: #f5f5f5;
+    color: #000;
 }
 
-*/
 button {
     /* Previous styles for the button */
     background-color: #1b1b28;
     border-radius: 50%;
     padding: 5px 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #0056b3;
+}
+
+button:hover {
+    background-color: #62ed26;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.delete-btn-task {
+    margin-left: 5px;
 }
 
 .button i {
-    /* Previous styles for the icon */
     color: #adaec9;
-    font-size: 5px; /* Adjust the font size for the icon */
+    font-size: 5px;
     margin-right: 2px;
 }
 
@@ -89,8 +99,41 @@ i {
     font-weight: 400;
 }
 
+.fa-edit {
+    color: #52eb10;
+}
+
+.fa-trash-alt,
+.fa-trash {
+    color: #297608;
+}
+
+.fa-puzzle-piece {
+    color: #50e410;
+}
+
+.fa-edit {
+    color: #52eb10;
+}
+
+.fa-trash-alt:hover,
+.fa-trash:hover,
+.fa-puzzle-piece:hover,
+.fa-edit:hover {
+    color: #0056b3;
+}
+
 .reset-all {
     text-align: center;
+}
+
+.fa-eraser {
+    color: #ff0000;
+}
+
+.fa-eraser:hover {
+    color: #50e410;
+    font-size: 20px;
 }
 
 #btn-reset-all {
@@ -100,4 +143,10 @@ i {
     padding: 10px 80px;
     border: 1px solid #1b1b28;
     margin-right: 60px;
+}
+
+#btn-reset-all:hover {
+    background-color: #0056b3;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }

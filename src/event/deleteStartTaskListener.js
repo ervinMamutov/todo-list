@@ -1,7 +1,10 @@
 import dom from '../dom.js';
-import deleteStartHandler from '../handler/deleteStartTaskHandler.js';
+import deleteStartTaskHandler from '../handler/deleteStartTaskHandler.js';
 
-dom.deleteStartTaskButton.addEventListener('click', (e) => {
-  console.log('yes');
-  deleteStartHandler(e);
-});
+const deleteStartTaskListener = () => {
+  dom.deleteStartTaskButton.addEventListener('click', (e) => {
+    deleteStartTaskHandler(e);
+  });
+};
+
+export default deleteStartTaskListener;
