@@ -1,8 +1,8 @@
 import dom from '../dom.js';
 
-const resetAllHandler = (e) => {
+const resetAllTaskHandler = (e) => {
   const ulEl = dom.ulList;
   ulEl.innerHTML = '';
 };
 
-export default resetAllHandler;
+export default resetAllTaskHandler;

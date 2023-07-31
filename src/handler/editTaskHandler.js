@@ -1,13 +1,11 @@
-const editTaskHandler = (e) => {
-  const taskEl = e.target;
-  const parent = taskEl.parentElement;
-  const btnElClassName = parent.classList;
-  const li = taskEl.closest('li');
+import dom from '../dom.js';
 
-  if (btnElClassName.contains('edit-btn-task')) {
-    const input = li.querySelector('#userTaskInput');
-    input.focus();
-  }
+const editTaskHandler = (e) => {
+  const targetEl = e.target;
+  const buttonEl = targetEl.parentElement;
+  const inputEl = buttonEl.previousElementSibling;
+  inputEl.focus();
+  console.log(buttonEl.previousElementSibling);
 };
 
 export default editTaskHandler;

@@ -6,6 +6,7 @@ const dom = {
   resetAllButton: document.getElementById('btn-reset-all'),
   taskContainer: document.querySelector('.task-container'),
   ulList: document.querySelector('.list'),
+  taskContainer: document.querySelector('.task-container'),
 };
 
 export default dom;

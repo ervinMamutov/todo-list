@@ -1,6 +1,25 @@
 import editTaskHandler from '../handler/editTaskHandler.js';
-import taskListener from './taskListener.js';
 
-taskListener(editTaskHandler);
+const editTaskListener = () => {
+  debugger;
 
-export default taskListener;
+  const btnEdit = document.querySelector('.edit-btn-task');
+  if (btnEdit) {
+    btnEdit.addEventListener('click', (e) => {
+      console.log(btnEdit);
+      editTaskHandler(e);
+    });
+  }
+  /* 
+  document.addEventListener('DOMContentLoaded', () => {
+    const btnEdit = document.querySelector('.edit-btn-task');
+    if (btnEdit) {
+      btnEdit.addEventListener('click', (e) => {
+        console.log(btnEdit);
+        editTaskHandler(e);
+      });
+    }
+  }); */
+};
+
+export default editTaskListener;

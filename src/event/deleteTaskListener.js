@@ -1,10 +1,14 @@
 import deleteTaskHandler from '../handler/deleteTaskHandler.js';
 
-document.addEventListener('DOMContentLoaded', () => {
-  const taskContainer = document.querySelector('.task-container');
-  if (taskContainer) {
-    taskContainer.addEventListener('click', (e) => {
-      deleteTaskHandler(e);
-    });
-  }
-});
+const deleteTaskListener = (e) => {
+  document.addEventListener('DOMContentLoaded', () => {
+    const btnDelete = document.querySelector('.delete-btn-task');
+    if (btnDelete) {
+      btn.addEventListener('click', (e) => {
+        deleteTaskHandler(e);
+      });
+    }
+  });
+};
+
+export default deleteTaskListener;
